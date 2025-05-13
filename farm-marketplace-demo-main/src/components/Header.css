@@ -1,0 +1,66 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Increased padding to make the header wider */
+  background: linear-gradient(90deg, #2E8B57, #3CB371, #66CDAA, #8FBC8F); /* Shades of green */
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Added custom font */
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px; /* Increased gap between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition for hover effect */
+  border-radius: 5px; /* Slight rounded corners */
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect with translucent background */
+  border-radius: 20px; /* Rounded corners on hover */
+}
+
+.logout-button {
+  background: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+
